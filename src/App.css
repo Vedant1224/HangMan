@@ -1,0 +1,148 @@
+/*Css code file that dictates the asthetic of all elements in the game*/
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  /*Source for background*/
+  background-image: url('https://wallpaperaccess.com/full/1713147.jpg');
+  /*Ensures image covers entire page*/
+  background-size: cover;
+  /*Centers background image*/
+  background-position: center;
+  /*Removes repetition of background image*/
+  background-repeat: no-repeat;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contentArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Style for the area which includes the hint and how to play button */
+.hintsArea {
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+/* Style for the dialog that displays hints, with positioning and styling. */
+.hintDialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Optimum background color to ensure no overlap with any flag */
+  background: rgb(187, 178, 178);
+  padding: 35px;
+  /* Ensures no other element overlaps the dialog  */
+  z-index: 1;
+}
+
+.hintButtons {
+  display: flex;
+  /* Orientation of hint buttons */
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.hintButtons button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.letterButtons {
+  display: grid;
+  /* Number of columns of equal width */
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 5px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+/* Common styles for letter buttons, hint buttons, and the reset button. */
+.letterButton,
+.hintButtons button,
+.resetButton {
+  padding: 0.8vw 1.5vw;
+  font-size: 1.2vw;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  min-width: 30px;
+  min-height: 30px;
+  /* Animates button transformation */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/*Ensures that the letters are disabled after one press*/
+.letterButton:disabled {
+  background-color: #cccccc;
+}
+
+/*Hover animation to make buttons more UI friendly*/
+.letterButton:hover,
+.hintButtons button:hover,
+.resetButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.2);
+}
+
+.resetButton {
+  background-color: #28a745;
+  margin-top: 3vw;
+  width: 30vw;
+}
+
+.displayWord {
+  font-size: 2.5vw;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*Toats indicates the win and losing message at the end of the game*/
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+.success {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+}
