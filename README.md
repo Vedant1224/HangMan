@@ -4,6 +4,8 @@
 
 # To Run, Paste this link in your browser (Preferably Chrome) : https://react-txbt6r.stackblitz.io and then click the run project button
 
+### CSDS 221: Full Stack Web Development Final Project
+
 ### Game Features
 
 - **Guess the Country**: Test your knowledge by guessing letters to reveal the country's name.
