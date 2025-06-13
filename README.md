@@ -26,4 +26,4 @@
 
 - **Hangman-Images**: Used the following source for all 7 of my images https://www.oligalma.com/en/downloads/images/hangman
 
-- **Ownership**: I own none of these images and am using them for my assignment for CSDS 221 while giving credit to the oweners to the best of my knowledge.
+- **Ownership**: I own none of these images and am using them for my assignment for CSDS 221 while giving credit to the owners to the best of my knowledge.
